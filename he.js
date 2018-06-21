@@ -1,5 +1,5 @@
 /*! https://mths.be/he v1.1.1 by @mathias | MIT license */
-;(function(root) {
+// ;(function(root) {
 
 	// Detect free variables `exports`.
 	var freeExports = typeof exports == 'object' && exports;
@@ -319,24 +319,24 @@
 
 	// Some AMD build optimizers, like r.js, check for specific condition patterns
 	// like the following:
-	if (
-		typeof define == 'function' &&
-		typeof define.amd == 'object' &&
-		define.amd
-	) {
-		define(function() {
-			return he;
-		});
-	}	else if (freeExports && !freeExports.nodeType) {
-		if (freeModule) { // in Node.js, io.js, or RingoJS v0.8.0+
-			freeModule.exports = he;
-		} else { // in Narwhal or RingoJS v0.7.0-
-			for (var key in he) {
-				has(he, key) && (freeExports[key] = he[key]);
-			}
-		}
-	} else { // in Rhino or a web browser
-		root.he = he;
-	}
+// 	if (
+// 		typeof define == 'function' &&
+// 		typeof define.amd == 'object' &&
+// 		define.amd
+// 	) {
+// 		define(function() {
+// 			return he;
+// 		});
+// 	}	else if (freeExports && !freeExports.nodeType) {
+// 		if (freeModule) { // in Node.js, io.js, or RingoJS v0.8.0+
+// 			freeModule.exports = he;
+// 		} else { // in Narwhal or RingoJS v0.7.0-
+// 			for (var key in he) {
+// 				has(he, key) && (freeExports[key] = he[key]);
+// 			}
+// 		}
+// 	} else { // in Rhino or a web browser
+// 		root.he = he;
+// 	}
 
-}(this));
+// }(this));
